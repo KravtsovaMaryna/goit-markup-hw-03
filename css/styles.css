@@ -360,7 +360,14 @@ color: var(--main-color);
 /*-------------PORTFOLIO--2------------*/
 
 .roster {
-    background-color: #F5F4FA;
+    /* background-color: #F5F4FA; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-bottom: -94px;
+}
+.roster-item:not(:last-child){
+    margin-right: 8px;
 }
 
 .roster-btn {
@@ -370,6 +377,7 @@ font-size: 16px;
 line-height: 1.6;
 text-align: center;
 color: var(--title-color);
+padding: 6px 22px;
 }
 .roster-btn:hover, .roster-btn:focus {
     background-color: var(--accent-color);
@@ -382,6 +390,20 @@ color: var(--title-color);
 .current-btn {
     color: var(--focus-color);
     background-color: var(--accent-color);
+}
+.images {
+    display: flex;
+    margin: -15px;
+    flex-wrap: wrap;
+}
+.images-item {
+    margin: 15px;
+    flex-basis: calc(100% / 3 - 30px);
+}
+.portfolio-text-wrapper {
+    border: 1px solid #eeeeee;
+    border-top: none;
+    padding: 20px 24px;
 }
 
 .images-title {
